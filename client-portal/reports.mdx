@@ -1,0 +1,70 @@
+---
+title: "How to Access, Search, and Download Your Pentest Reports"
+sidebarTitle: "Reports"
+description: "Find, view, and download your delivered pentest reports. Learn how access logging, report expiry, and cross-project search work in the client portal."
+---
+
+Pentest reports are the primary deliverable of every engagement. Once a report has been reviewed and marked as delivered, it becomes available in the client portal for you to view and download. The portal keeps a full audit log of every access event, and reports may carry an expiry date after which access is automatically revoked.
+
+## How to find a report
+
+Reports are organized by project. To access a report:
+
+1. Navigate to the **Projects** section of the portal.
+2. Open the project the report belongs to.
+3. Scroll to the **Available Reports** section on the project detail page.
+4. Select **View** next to the report you want to open.
+
+You can also use the search feature to find reports across all your projects at once — see [Searching across all reports](#searching-across-all-reports) below.
+
+## Report availability
+
+A report only appears in the portal once its status is **delivered** or **ready**. Reports that are still being authored or are under internal review are not visible to you yet. If you expect a report and cannot see it, it has likely not been delivered — check the project timeline for an estimated delivery date or contact your engagement manager.
+
+## Report expiry
+
+Some reports are issued with an expiry date. The expiry date is shown on the report detail page under **Access Expires**. After that date, the portal automatically revokes your access and the report no longer opens.
+
+<Warning>
+  If a report has expired, contact your engagement manager to request extended access. Expired reports cannot be re-opened from the portal without intervention from the Pentest Consultancy team.
+</Warning>
+
+## Access logging
+
+Every time you open a report, the portal records an access event. The log captures:
+
+- **Report ID** — which report was accessed
+- **User ID** — your account identifier
+- **Timestamp** — the exact date and time of the access
+- **Action** — recorded as `viewed`
+- **IP address** — the network address the request came from
+- **User agent** — the browser or client used
+
+This audit trail exists for compliance purposes. You can see a summary of your own access history — including total views and the date of the most recent access — on the report detail page.
+
+## Searching across all reports
+
+The portal includes a search feature that queries the title and description of all delivered and ready reports across every project linked to your account. Use it to find a specific report without navigating project by project.
+
+## FAQ
+
+<AccordionGroup>
+  <Accordion title="Why can't I see my report?">
+    Reports only appear in the portal once they have been marked as **delivered** or **ready** by the Pentest Consultancy team. If you are expecting a report that is not yet visible, it is either still being authored or is under internal quality review. Check the project timeline for updates, or contact your engagement manager for an estimated delivery date.
+
+    If the report was previously visible and has now disappeared, its access period may have expired — see below.
+  </Accordion>
+  <Accordion title="Are my report accesses logged?">
+    Yes. Every time you open a report, the portal records the event with your user ID, the report ID, a timestamp, your IP address, your browser's user agent string, and the action (`viewed`). This logging is mandatory for compliance and cannot be disabled. The access history is visible to you on the report detail page.
+  </Accordion>
+  <Accordion title="Can I search across all my reports?">
+    Yes. The portal's search feature lets you search by keyword across the titles and descriptions of all reports that have been delivered or marked as ready across every project on your account. Navigate to the reports search and enter your query to filter results instantly.
+  </Accordion>
+  <Accordion title="What if my report access has expired?">
+    Reports issued with an expiry date become inaccessible once that date passes. The portal will deny access automatically. Contact your engagement manager and request extended access — the Pentest Consultancy team can reissue access if it is appropriate to do so under the terms of your engagement.
+  </Accordion>
+</AccordionGroup>
+
+<Info>
+  All reports contain sensitive security findings about your organization's systems. Handle downloaded reports in accordance with your internal information security policies and do not share them with unauthorized parties.
+</Info>

@@ -1,0 +1,66 @@
+---
+title: "Network Penetration Testing: External and Internal"
+sidebarTitle: "Network"
+description: "Assess your external perimeter and internal network for misconfigurations, unpatched systems, lateral movement paths, and data exfiltration risks."
+---
+
+Your network infrastructure is the foundation everything else depends on. Firewalls, routers, switches, VPNs, and the internal systems they connect form an attack surface that adversaries probe constantly. A single misconfigured service, unpatched host, or weak credential can grant an attacker a foothold from which they escalate privileges, move laterally, and reach your most sensitive systems. Network penetration testing evaluates this attack surface from both external and internal perspectives, giving you a realistic picture of what an attacker could achieve.
+
+## What it is
+
+Network penetration testing evaluates the security of network infrastructure, including firewalls, routers, switches, and internal systems through both external and internal perspectives. Our engineers use the same tools and techniques as real attackers — active reconnaissance, vulnerability exploitation, and lateral movement — to identify and demonstrate real attack paths rather than theoretical risks.
+
+## Why it matters
+
+Network infrastructure is the foundation of organizational security. Weaknesses can allow attackers to gain initial access, move laterally, and compromise critical systems. Internal network testing is especially important — once an attacker is inside your perimeter (through phishing, a compromised endpoint, or a rogue device), the internal network is often where the real damage happens.
+
+## Threats addressed
+
+Our network assessments target the most commonly exploited weaknesses in enterprise network environments:
+
+- Weak network segmentation
+- Unpatched systems and services
+- Default credentials
+- Misconfigured firewalls and access controls
+- Lateral movement opportunities
+- Data exfiltration paths
+
+<Info>
+  External and internal assessments are scoped separately. An external assessment targets your internet-facing perimeter — public IPs, exposed services, and edge devices. An internal assessment simulates an attacker who has already gained access to your network, such as through a phishing compromise or physical access. We recommend both for a complete picture.
+</Info>
+
+## Testing approach
+
+<Steps>
+  <Step title="External reconnaissance and scanning">
+    We enumerate your internet-facing assets — IP ranges, open ports, running services, exposed administrative interfaces, and software versions — to build a complete picture of the external attack surface.
+  </Step>
+  <Step title="Vulnerability identification and exploitation">
+    Identified services are assessed for known vulnerabilities, misconfigurations, and weak credentials. Where possible, vulnerabilities are safely exploited to demonstrate real impact rather than theoretical risk.
+  </Step>
+  <Step title="Internal network assessment">
+    From a position inside the network (either on-site or via a drop device), we map internal hosts, services, and trust relationships. We identify over-exposed administrative services, broadcast protocol weaknesses, and improperly segmented zones.
+  </Step>
+  <Step title="Lateral movement testing">
+    We attempt to move from an initial foothold to progressively more sensitive systems — using credential reuse, pass-the-hash, Kerberos attacks, and trust relationship abuse — to demonstrate the real-world impact of a breach.
+  </Step>
+  <Step title="Privilege escalation attempts">
+    We test for local and domain privilege escalation opportunities including misconfigured services, unquoted service paths, token impersonation, and Active Directory attack paths.
+  </Step>
+  <Step title="Data exfiltration scenarios">
+    We identify paths through which an attacker could exfiltrate data from your environment — including permitted egress channels, DNS tunneling opportunities, and over-permissive outbound firewall rules.
+  </Step>
+</Steps>
+
+## Deliverables
+
+You receive the following at the close of the engagement:
+
+- Network security assessment report
+- Vulnerability findings with business impact
+- Attack path analysis
+- Remediation and hardening recommendations
+
+<Note>
+  To scope a network penetration test, visit [/request-assessment](/request-assessment) and select **Network** as your service type. Include your IP ranges, any out-of-scope systems, and whether you require external-only, internal-only, or combined coverage.
+</Note>

@@ -1,0 +1,84 @@
+{
+  "projectType": "saas",
+  "projectName": "Pentest Consultancy",
+  "projectDescription": "A professional penetration testing and cybersecurity consultancy platform that offers security assessment services, a client portal for tracking projects and accessing reports, and a secure contact system for requesting engagements.",
+  "theme": "willow",
+  "primaryColor": "#848c8e",
+  "lightColor": "#11161e",
+  "darkColor": "#cfd0d2",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["introduction", "request-assessment"]
+          },
+          {
+            "group": "Services",
+            "pages": [
+              "services/overview",
+              "services/web-application",
+              "services/api-security",
+              "services/mobile",
+              "services/network",
+              "services/cloud",
+              "services/red-team"
+            ]
+          },
+          {
+            "group": "Methodology",
+            "pages": [
+              "methodology/overview",
+              "methodology/standards"
+            ]
+          },
+          {
+            "group": "Client Portal",
+            "pages": [
+              "client-portal/overview",
+              "client-portal/projects",
+              "client-portal/reports"
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              "resources/case-studies",
+              "resources/faq"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Six comprehensive penetration testing service types (Web App, API, Mobile, Network, Cloud, Red Team)",
+    "Structured six-phase testing methodology aligned with OWASP, NIST, and PTES standards",
+    "Secure client portal for tracking active projects and accessing delivered reports",
+    "Detailed vulnerability reports with CVSS scores and remediation guidance",
+    "Anonymized case studies demonstrating real-world security outcomes",
+    "Secure assessment request form with owner notification system",
+    "Report access logging and expiry controls for compliance and auditability",
+    "Mobile-first responsive design with accessibility (WCAG 2.1 AA)"
+  ],
+  "publicApiSurface": [
+    "blog.list — Get all research/blog posts",
+    "blog.getBySlug — Get specific blog post by slug",
+    "caseStudies.list — Get all case studies",
+    "caseStudies.getBySlug — Get specific case study by slug",
+    "contact.submit — Submit a security assessment request",
+    "auth.me — Get current authenticated user",
+    "auth.logout — Log out current user",
+    "clientPortal.profile — Get authenticated client profile",
+    "clientPortal.projects — Get all projects for authenticated client",
+    "clientPortal.projectDetail — Get specific project details",
+    "clientPortal.projectTimeline — Get project updates/timeline",
+    "clientPortal.projectReports — Get delivered reports for a project",
+    "clientPortal.reportDetail — Get specific report details",
+    "clientPortal.reportAccessHistory — Get report access audit log",
+    "clientPortal.searchReports — Search reports across all projects",
+    "clientPortal.dashboardSummary — Get dashboard overview metrics"
+  ]
+}

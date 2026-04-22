@@ -1,0 +1,94 @@
+---
+title: "Requesting a Pentest Consultancy Security Assessment"
+description: "Step-by-step guide to submitting a penetration testing request, what information to include, and what happens after you submit your inquiry."
+---
+
+Requesting a security assessment starts with a short contact form that captures the information we need to scope your engagement. You do not need to have a fully defined scope before reaching out — the form is the beginning of a conversation, not a contract. Once you submit, a member of the team reviews your request and follows up within one business day to schedule a scoping call where you work out the details together.
+
+<Note>
+  All communications between you and Pentest Consultancy are strictly confidential. We operate under a mutual NDA at the start of every engagement and follow responsible disclosure practices throughout. Your information is never shared with third parties.
+</Note>
+
+## How to submit your request
+
+<Steps>
+  <Step title="Fill out the assessment request form">
+    Navigate to the contact form on the Pentest Consultancy website. Provide the following information:
+
+    - **Full name** — your name as the primary point of contact
+    - **Email address** — a work address is preferred so we can follow up reliably
+    - **Company name** — the organization that will be the client of record
+    - **Service type** — the category of testing that best matches your needs (see [service types](#service-types) below)
+    - **Message** — a description of your environment, what you want tested, any known constraints, and your rough timeline
+
+    The more context you provide in the message field, the more productive the scoping call will be. You do not need to have exact IP ranges or URLs at this stage — a plain-language description of your systems is enough to get started.
+  </Step>
+  <Step title="Scoping call">
+    After reviewing your submission, a security consultant contacts you to schedule a scoping call — typically within one business day. During this call you discuss:
+
+    - The attack surface and what is in and out of scope
+    - Testing type (black-box, grey-box, or white-box)
+    - Rules of engagement and any systems that must not be disrupted
+    - Timeline and availability of your team during testing
+    - Deliverable expectations and report recipients
+
+    The scoping call usually takes 30 to 60 minutes. You may be asked to provide technical documentation such as architecture diagrams or API specifications to help define coverage.
+  </Step>
+  <Step title="Receive your proposal">
+    Following the scoping call, you receive a formal written proposal that outlines scope, methodology, timeline, and pricing. Review the proposal with your team and raise any questions before signing. Once you approve the proposal and the engagement agreement is signed, testing is scheduled.
+  </Step>
+  <Step title="Engagement begins">
+    Testing starts on the agreed date. Your assigned team conducts the assessment per the defined scope and methodology. You receive a progress update at key milestones and can contact your project lead at any point through the client portal. When testing is complete, you receive your full report package — including vulnerability findings, risk ratings, remediation guidance, and an executive summary.
+  </Step>
+</Steps>
+
+<Info>
+  When you submit the form, the owner is notified immediately and your request is logged in the engagement tracking system. You will receive a confirmation and a follow-up from the team within one business day.
+</Info>
+
+## Service types
+
+Select the service type that best describes the primary attack surface for your assessment. If your environment spans multiple categories, note that in your message and the team will discuss a combined engagement during the scoping call.
+
+| Service type | What it covers |
+|---|---|
+| **Web Application Testing** | Web-facing applications — authenticated and unauthenticated surfaces, OWASP Top 10, business logic |
+| **API Security Testing** | REST, GraphQL, and SOAP APIs — broken auth, excessive data exposure, improper authorization |
+| **Mobile Security Testing** | iOS and Android apps — static analysis, runtime testing, backend API exposure |
+| **Network Penetration Testing** | External perimeter and internal network — exposed services, misconfigurations, lateral movement |
+| **Cloud Security Assessment** | AWS, Azure, GCP — IAM, storage, network controls, privilege escalation |
+| **Red Team Operations** | Multi-stage adversary simulation — goal-oriented campaign against people, process, and technology |
+
+## Frequently asked questions
+
+<AccordionGroup>
+  <Accordion title="How long does an assessment take?">
+    Duration depends on the service type and the size of your scope. A focused web application assessment typically takes five to ten business days. A network penetration test for a mid-size environment runs one to two weeks. Red team engagements are longer by nature — usually two to four weeks — because they simulate a realistic attacker timeline. You will receive a specific timeline estimate in your proposal after the scoping call.
+  </Accordion>
+  <Accordion title="What information do I need to provide?">
+    For the initial request, you only need your contact details, the type of testing you are looking for, and a plain-language description of your environment and goals. During the scoping call you may be asked for additional detail such as a list of URLs or IP ranges, API documentation, architecture diagrams, or test account credentials (for grey-box or white-box assessments). You do not need everything ready before submitting the form.
+  </Accordion>
+  <Accordion title="Are assessments confidential?">
+    Yes. All engagements are conducted under a mutual NDA. Your vulnerability findings, scope details, and any sensitive information you share are never disclosed publicly or shared with third parties. Findings are delivered exclusively through secure channels and are accessible only to the contacts you designate. Pentest Consultancy follows responsible disclosure practices for any incidental discoveries made during testing.
+  </Accordion>
+  <Accordion title="What do I receive at the end of an assessment?">
+    At the conclusion of each engagement you receive a full report package that includes:
+
+    - A **detailed vulnerability report** with every finding, CVSS severity rating, proof-of-concept evidence, and affected components
+    - **Step-by-step remediation guidance** for each finding, prioritized by risk level
+    - An **executive summary** suitable for board, audit committee, or investor reporting
+    - **Retest support** to verify that your remediation is effective, included within the engagement window
+
+    All reports are accessible through your client portal account and remain available after the engagement closes for audits and future reference.
+  </Accordion>
+  <Accordion title="Can I request a retest after remediating findings?">
+    Yes. Retest coverage is included within the engagement window for all findings from the original assessment. If you need a retest after the engagement window has closed, or if you make significant changes to your environment, contact the team to schedule a follow-on retest engagement.
+  </Accordion>
+  <Accordion title="Do you test production environments?">
+    Most assessments are conducted against production or production-equivalent environments because testing against staging can miss vulnerabilities that only appear under real-world conditions. The scoping call covers exactly which systems are in scope and defines any constraints — for example, avoiding denial-of-service techniques or restricting testing hours — to protect your environment during the engagement.
+  </Accordion>
+</AccordionGroup>
+
+<Warning>
+  Do not share credentials, API keys, or sensitive system access until after the engagement agreement is signed and you have confirmed the identity of your assigned consultant through the client portal.
+</Warning>

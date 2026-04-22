@@ -1,0 +1,66 @@
+---
+title: "Cloud Security Assessments for AWS, Azure, and GCP"
+sidebarTitle: "Cloud"
+description: "Evaluate your AWS, Azure, and GCP security posture — covering IAM policies, storage exposure, encryption, network controls, and compliance gaps."
+---
+
+Cloud environments are powerful and flexible, but their shared-responsibility model means misconfigurations are entirely your responsibility to catch. An overly permissive IAM role, a publicly accessible storage bucket, or an unencrypted database can expose your most sensitive data without triggering a single firewall alert. Cloud security assessment gives you a comprehensive, configuration-level review of your cloud posture across the platforms you rely on — and a concrete roadmap to remediate what matters most.
+
+## What it is
+
+Cloud security assessment evaluates cloud infrastructure configuration, access controls, and security posture across AWS, Azure, and GCP platforms. Our engineers review your environment against cloud provider best practices, CIS benchmarks, and relevant compliance frameworks — identifying misconfigured resources, over-privileged identities, and gaps in your logging and monitoring coverage.
+
+## Why it matters
+
+Cloud misconfigurations are a leading cause of data breaches. Comprehensive assessment ensures proper security controls, compliance, and protection of cloud resources. Unlike traditional penetration testing, cloud assessments often reveal risks that are invisible to network-layer scanning — policy misconfigurations, identity sprawl, and improperly secured data services that are reachable only through the cloud control plane.
+
+## Threats addressed
+
+Our cloud assessments target the misconfiguration and design weaknesses most frequently associated with cloud breaches:
+
+- Overly permissive IAM policies
+- Exposed storage buckets and databases
+- Insecure network configuration
+- Unencrypted data in transit and at rest
+- Logging and monitoring gaps
+- Compliance violations
+
+<Tip>
+  IAM is the most consequential area of cloud security. Overly permissive roles — particularly those with wildcard actions or that can be assumed by external principals — are the most common root cause of serious cloud incidents. Our IAM analysis reviews every principal, policy, and trust relationship in your environment.
+</Tip>
+
+## Testing approach
+
+<Steps>
+  <Step title="Cloud infrastructure inventory and mapping">
+    We build a complete inventory of your cloud resources — compute instances, managed services, storage buckets, databases, serverless functions, and networking components — across all regions and accounts in scope.
+  </Step>
+  <Step title="IAM policy analysis and access control review">
+    We analyze every IAM policy, role, user, group, and service account to identify over-privilege, unused permissions, cross-account trust risks, and public-facing identity configurations.
+  </Step>
+  <Step title="Storage and database security assessment">
+    We review the configuration of object storage (S3, Azure Blob, GCS), managed databases, and data warehouses — checking for public access policies, encryption settings, and access logging.
+  </Step>
+  <Step title="Network configuration review">
+    We assess security groups, network ACLs, VPC configurations, firewall rules, and peering relationships for overly permissive inbound and outbound rules, exposed management interfaces, and unintended internet connectivity.
+  </Step>
+  <Step title="Encryption and key management evaluation">
+    We verify that sensitive data is encrypted at rest and in transit, that encryption keys are appropriately managed (rotation, separation of duties, hardware security module usage), and that no plaintext secrets are stored in configuration or environment variables.
+  </Step>
+  <Step title="Compliance and audit logging verification">
+    We check that CloudTrail, Azure Monitor, or GCP Cloud Logging is enabled and configured correctly — covering all regions, logging management-plane events, and sending logs to tamper-resistant destinations.
+  </Step>
+</Steps>
+
+## Deliverables
+
+You receive the following at the close of the engagement:
+
+- Cloud security assessment report
+- Configuration findings and risk ratings
+- Compliance assessment results
+- Remediation roadmap and best practices
+
+<Note>
+  To scope a cloud security assessment, visit [/request-assessment](/request-assessment) and select **Cloud** as your service type. Specify which cloud platforms are in scope and whether you require read-only API access or a manual review of exported configuration data.
+</Note>

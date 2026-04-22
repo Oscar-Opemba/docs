@@ -1,0 +1,66 @@
+---
+title: "API Security Testing: REST, GraphQL, and SOAP APIs"
+sidebarTitle: "API Security"
+description: "Assess your REST, GraphQL, and SOAP APIs for authentication flaws, broken authorization, data exposure, and injection vulnerabilities with expert testing."
+---
+
+APIs are the connective tissue of modern applications — they power mobile clients, third-party integrations, and microservice architectures. That ubiquity makes them a high-value target: a single insecure API endpoint can expose your entire user database, allow unauthorized operations, or enable account takeover at scale. API security testing gives you a complete picture of your API attack surface and the confidence that your interfaces are hardened against the threats most commonly exploited in the wild.
+
+## What it is
+
+API security testing focuses on identifying vulnerabilities in application programming interfaces, including authentication mechanisms, data exposure, and business logic flaws. Our engineers assess REST, GraphQL, and SOAP APIs through a combination of endpoint discovery, authentication probing, authorization testing, and injection analysis — going well beyond what automated scanners can surface alone.
+
+## Why it matters
+
+APIs are critical infrastructure for modern applications. Insecure APIs can expose sensitive data, allow unauthorized operations, and compromise entire systems. Comprehensive API testing is essential for security — particularly as APIs often bypass the security controls applied to traditional web interfaces.
+
+## Threats addressed
+
+Our API assessments target the vulnerability classes catalogued in the OWASP API Security Top 10 and beyond:
+
+- Broken authentication and authorization
+- Excessive data exposure
+- Injection attacks
+- Broken object level authorization (BOLA)
+- Mass assignment vulnerabilities
+- Rate limiting and resource exhaustion
+
+<Info>
+  Broken object level authorization (BOLA) — where an API returns another user's resources by simply changing an object ID in the request — is consistently the most exploited API vulnerability class. We test for BOLA systematically across every object type exposed by your API.
+</Info>
+
+## Testing approach
+
+<Steps>
+  <Step title="API endpoint discovery and mapping">
+    We enumerate all API endpoints using documentation (OpenAPI/Swagger specs, Postman collections), traffic analysis, and active discovery. This produces a complete map of your API attack surface.
+  </Step>
+  <Step title="Authentication mechanism testing">
+    We assess your authentication scheme — API keys, OAuth 2.0 flows, JWT handling, session tokens — for weaknesses including weak secrets, token replay, and improper validation.
+  </Step>
+  <Step title="Authorization and access control verification">
+    Each endpoint is tested from multiple user contexts to verify that access controls enforce least privilege. We test for both BOLA (object-level) and broken function-level authorization.
+  </Step>
+  <Step title="Input validation and injection testing">
+    API parameters, headers, and body fields are tested for SQL injection, NoSQL injection, command injection, and GraphQL-specific attacks such as introspection abuse and query batching.
+  </Step>
+  <Step title="Rate limiting and DoS testing">
+    We verify that your API enforces rate limiting, request size limits, and query complexity controls to protect against abuse and resource exhaustion.
+  </Step>
+  <Step title="Data exposure assessment">
+    We review API responses for over-exposure — instances where endpoints return more data than the consuming client requires — and identify fields that should be filtered or masked.
+  </Step>
+</Steps>
+
+## Deliverables
+
+You receive the following at the close of the engagement:
+
+- API vulnerability report with severity ratings
+- Authentication and authorization assessment
+- Data exposure findings and recommendations
+- Performance and resilience testing results
+
+<Note>
+  To scope an API security assessment, visit [/request-assessment](/request-assessment) and select **API Security** as your service type. Providing your OpenAPI specification or Postman collection at intake accelerates the testing timeline.
+</Note>

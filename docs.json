@@ -1,0 +1,68 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "willow",
+  "name": "Pentest Consultancy",
+  "colors": {
+    "primary": "#848c8e",
+    "light": "#cfd0d2",
+    "dark": "#11161e"
+  },
+  "logo": {
+    "light": "https://media.brand.dev/5ffd6ce4-2434-4b4b-920a-f8cacac8b48b.svg",
+    "dark": "https://media.brand.dev/5ffd6ce4-2434-4b4b-920a-f8cacac8b48b.svg"
+  },
+  "favicon": "https://media.brand.dev/2b01fe20-c04b-4a1d-a2f9-1d2789c50a7a.jpg",
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/Oscar-Opemba/pentest-consultancy"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["index", "introduction", "request-assessment"]
+          },
+          {
+            "group": "Services",
+            "pages": [
+              "services/overview",
+              "services/web-application",
+              "services/api-security",
+              "services/mobile",
+              "services/network",
+              "services/cloud",
+              "services/red-team"
+            ]
+          },
+          {
+            "group": "Methodology",
+            "pages": [
+              "methodology/overview",
+              "methodology/standards"
+            ]
+          },
+          {
+            "group": "Client Portal",
+            "pages": [
+              "client-portal/overview",
+              "client-portal/projects",
+              "client-portal/reports"
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              "resources/case-studies",
+              "resources/faq"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

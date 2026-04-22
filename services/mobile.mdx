@@ -1,0 +1,66 @@
+---
+title: "Mobile Application Security Testing: iOS and Android"
+sidebarTitle: "Mobile"
+description: "Evaluate iOS and Android apps for insecure storage, weak encryption, runtime vulnerabilities, and insecure communications through expert mobile testing."
+---
+
+Mobile applications operate in environments that your organization does not control — on user-owned devices, over untrusted networks, and alongside potentially hostile applications. They handle sensitive user data including credentials, payment details, and personal health information. A security vulnerability in your mobile application can lead to data theft, account compromise, or severe reputational damage. Mobile application security testing gives you a thorough, adversary-perspective assessment across both iOS and Android platforms.
+
+## What it is
+
+Mobile application security testing evaluates iOS and Android applications for vulnerabilities including insecure storage, weak encryption, and runtime vulnerabilities. Our engineers combine static analysis of the application binary, dynamic analysis during runtime, and targeted reverse engineering to surface the full range of weaknesses — from hardcoded secrets buried in code to insecure inter-process communication.
+
+## Why it matters
+
+Mobile applications handle sensitive user data and operate in untrusted environments. Security vulnerabilities can lead to data theft, unauthorized access, and reputational damage. App store security reviews do not perform security testing — that responsibility falls to you.
+
+## Threats addressed
+
+Our mobile assessments target the vulnerability classes defined in the OWASP Mobile Application Security Verification Standard (MASVS):
+
+- Insecure data storage
+- Weak or missing encryption
+- Insecure communication
+- Reverse engineering and tampering
+- Insecure authentication
+- Sensitive data in memory
+
+<Warning>
+  Insecure data storage is one of the most prevalent mobile vulnerabilities. Sensitive data — including tokens, credentials, and personally identifiable information — is often written to unprotected locations such as shared preferences, SQLite databases, or log files accessible to other applications or anyone with physical device access.
+</Warning>
+
+## Testing approach
+
+<Steps>
+  <Step title="Static analysis and code review">
+    We decompile and analyze the application binary to identify hardcoded secrets, insecure coding patterns, overly permissive configurations, and sensitive data exposure in the application code and resources.
+  </Step>
+  <Step title="Dynamic analysis and runtime testing">
+    We exercise the application on physical or emulated devices, intercepting network traffic, monitoring runtime behavior, and injecting test payloads to surface vulnerabilities that only appear during execution.
+  </Step>
+  <Step title="Reverse engineering assessment">
+    We evaluate the application's resistance to reverse engineering and tampering — including the effectiveness of any obfuscation, root/jailbreak detection, and anti-tampering controls in place.
+  </Step>
+  <Step title="Local and remote data storage testing">
+    We audit all locations where the application stores data — device file system, shared preferences, SQLite databases, Keychain/Keystore — and verify that sensitive data is appropriately protected.
+  </Step>
+  <Step title="Communication channel analysis">
+    We inspect all network communications for certificate validation weaknesses, cleartext transmission of sensitive data, and susceptibility to man-in-the-middle attacks.
+  </Step>
+  <Step title="Authentication and session management review">
+    We assess login flows, token handling, biometric authentication implementation, and session lifecycle management for weaknesses that could allow unauthorized access.
+  </Step>
+</Steps>
+
+## Deliverables
+
+You receive the following at the close of the engagement:
+
+- Mobile security assessment report
+- Vulnerability findings with remediation guidance
+- Code review recommendations
+- Security best practices for mobile development
+
+<Note>
+  To scope a mobile application assessment, visit [/request-assessment](/request-assessment) and select **Mobile** as your service type. Provide both iOS (`.ipa`) and Android (`.apk`/`.aab`) binaries at intake if you require cross-platform coverage in a single engagement.
+</Note>

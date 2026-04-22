@@ -1,0 +1,133 @@
+---
+title: "Frequently Asked Questions About Security Assessments"
+sidebarTitle: "FAQ"
+description: "Answers to common questions about security assessments: what to expect during testing, what deliverables you receive, and how we protect your data."
+---
+
+This page answers the questions we hear most often from clients before, during, and after a security assessment. Whether you are exploring penetration testing for the first time or evaluating us as a provider, you will find straightforward answers here covering engagement logistics, testing methodology, report deliverables, and our confidentiality practices. If you have a question that is not covered below, reach out through the [assessment request form](/request-assessment).
+
+## Getting started
+
+<AccordionGroup>
+  <Accordion title="What types of organizations do you work with?">
+    We work with organizations of all sizes across a wide range of industries, including financial technology, healthcare, e-commerce, SaaS, banking, and cloud services. Our clients include early-stage startups preparing for their first enterprise sales cycle, mid-market companies seeking compliance validation, and large enterprises running adversary simulation exercises against mature security programs.
+
+    What matters more than company size is the nature of what you are trying to protect. If you operate a web application, API, mobile app, internal network, or cloud infrastructure that handles sensitive data or business-critical processes, we can scope an assessment that fits your environment.
+  </Accordion>
+  <Accordion title="How do I request a security assessment?">
+    Submit your inquiry through the [assessment request form](/request-assessment). Provide a brief description of your environment, the systems you want tested, and any compliance or timeline requirements you are working toward.
+
+    After you submit, one of our consultants will review your request and follow up within one business day to discuss scope, timeline, and approach. We do not require you to have a detailed scope defined before reaching out — part of our scoping process is helping you identify what needs to be tested.
+  </Accordion>
+  <Accordion title="How long does a typical engagement take?">
+    Duration depends on the scope and type of assessment:
+
+    - **Web application or API assessment**: 1–2 weeks for a single application, including testing and report delivery
+    - **Mobile security assessment**: 1–2 weeks for iOS or Android, or up to 3 weeks for both platforms
+    - **Network penetration test**: 1–2 weeks for an external assessment; 2–3 weeks for a combined external and internal engagement
+    - **Cloud configuration audit**: 1 week for a focused review of a single cloud environment
+    - **Red team engagement**: 3–6 weeks, depending on the number of attack scenarios and the complexity of your environment
+
+    We confirm a delivery timeline before the engagement starts and communicate proactively if anything changes.
+  </Accordion>
+  <Accordion title="Do you offer emergency or expedited assessments?">
+    Yes. If you have experienced a security incident, are responding to a compliance deadline, or have an urgent business need, contact us directly through the [assessment request form](/request-assessment) and mark your inquiry as urgent. We will do our best to accommodate accelerated timelines. Note that expedited engagements may require adjusted scope or additional resource allocation, which we discuss transparently before confirming the schedule.
+  </Accordion>
+</AccordionGroup>
+
+## The testing process
+
+<AccordionGroup>
+  <Accordion title="Will testing disrupt our production systems?">
+    Our testing is designed to avoid service disruption. Before any active testing begins, we agree on rules of engagement that define which systems are in scope, what testing techniques are permitted, and what to do if we identify a condition that could affect availability.
+
+    For highly sensitive production environments, we recommend testing during off-peak hours or against a staging environment that mirrors production. We discuss these options during scoping and follow your operational requirements. Our consultants are experienced at conducting rigorous assessments without causing outages.
+  </Accordion>
+  <Accordion title="What do I need to provide before testing begins?">
+    We work through a structured kickoff process to gather everything needed before testing starts. Depending on the assessment type, this typically includes:
+
+    - **Scope documentation** — a list of IP addresses, domains, application URLs, or cloud accounts in scope
+    - **Test credentials** — user accounts at different privilege levels for authenticated testing
+    - **Architecture overview** — network diagrams or environment descriptions to help us allocate testing time effectively
+    - **Rules of engagement** — any systems, actions, or time windows that must be excluded or restricted
+
+    For black-box engagements, we intentionally work with minimal documentation to simulate an external attacker. For gray-box or white-box assessments, more documentation helps us test more efficiently and thoroughly. We guide you through this during kickoff.
+  </Accordion>
+  <Accordion title="How is scope defined?">
+    Scope is defined collaboratively during the pre-engagement scoping call. We ask about the systems you want tested, the business context and risk priorities, any regulatory or compliance requirements, and any systems or actions that must be excluded.
+
+    We document the agreed scope in a signed statement of work before testing begins. This protects both parties and ensures our consultants have a clear mandate. If you are unsure what should be in scope, we can help you think through what presents the most meaningful risk to your organization.
+  </Accordion>
+  <Accordion title="Can we expand scope after the engagement starts?">
+    Yes, scope can be expanded after testing begins, but it requires a formal change request. We document the additional systems or objectives, confirm the impact on timeline and cost, and update the statement of work before expanding testing.
+
+    This process ensures that any new testing is authorized in writing, which is important both for your internal governance and for our legal authorization to test. Unplanned scope changes mid-engagement can also affect report quality, so we prefer to identify the full scope before testing starts whenever possible.
+  </Accordion>
+</AccordionGroup>
+
+## Reports and deliverables
+
+<AccordionGroup>
+  <Accordion title="What is included in the final report?">
+    Every engagement produces a comprehensive written report that includes:
+
+    - **Executive summary** — a non-technical overview of the assessment, the risk posture observed, and the most important findings for leadership and board-level readers
+    - **Technical findings** — a detailed write-up of each vulnerability, including its description, severity rating (using CVSS), reproduction steps, proof-of-concept evidence, and specific remediation guidance
+    - **Risk prioritization** — findings ranked by business impact so your team can address the most critical issues first
+    - **Remediation roadmap** — actionable next steps organized by priority and effort level
+    - **Attack narrative** (red team engagements) — a timeline of the simulated attack chain, including how initial access was achieved, how far lateral movement progressed, and what objectives were reached
+
+    All findings include enough detail for your development or infrastructure team to reproduce and remediate each issue independently.
+  </Accordion>
+  <Accordion title="How do I access my report?">
+    Your report is delivered as a password-protected PDF through a secure channel we agree on during the engagement kickoff. We do not transmit reports over unencrypted email. Common delivery methods include an encrypted file transfer, a secure shared drive, or a password-protected link with a defined expiry.
+
+    We also offer a report readout session — a live walkthrough of the findings with your technical team — at no additional cost. This session gives your team the opportunity to ask questions, clarify remediation steps, and discuss prioritization before you begin remediation work.
+  </Accordion>
+  <Accordion title="How long will I have access to my report?">
+    You retain your report indefinitely once it is delivered to you. We also retain a copy on our end in encrypted storage for the duration of our data retention policy, which allows us to answer follow-up questions about findings after the engagement closes.
+
+    If you need a re-delivery of the report at a later date — for example, to share with a new CISO or to present to auditors — contact us and we will re-send it through a secure channel.
+  </Accordion>
+  <Accordion title="Can you help us remediate the findings?">
+    Remediation guidance is included in every report at no additional cost. Each finding includes specific, actionable steps your team can follow to resolve the vulnerability.
+
+    If you need hands-on remediation support — for example, code review assistance, architecture recommendations, or validation that a fix is effective — we offer remediation consulting as a separate engagement. Reach out through the [assessment request form](/request-assessment) to discuss your needs. We also offer re-testing to verify that critical and high-severity findings have been successfully resolved.
+  </Accordion>
+</AccordionGroup>
+
+## Security and confidentiality
+
+<AccordionGroup>
+  <Accordion title="How do you protect the information you discover?">
+    All data collected during an engagement — including vulnerability details, credentials, system information, and proof-of-concept artifacts — is handled under strict information security controls. We store engagement data in encrypted form, limit access to the consultants assigned to your project, and delete all client data according to agreed retention terms after the engagement closes.
+
+    We do not retain copies of credentials, sensitive documents, or personal data beyond what is necessary to produce the report. Our consultants operate under confidentiality obligations, and we are happy to sign a mutual non-disclosure agreement (NDA) before any scoping discussions begin.
+  </Accordion>
+  <Accordion title="Are results kept confidential?">
+    Yes, absolutely. The findings from your engagement are never shared with third parties, disclosed publicly, or used in marketing materials without your explicit written permission. Our case studies are fully anonymized — no client names, system details, or identifying information are ever published.
+
+    If you would like us to sign a specific confidentiality agreement in addition to our standard engagement terms, we accommodate that as a routine part of our contracting process. Contact us before the scoping call if you need an NDA in place before any discussion begins.
+  </Accordion>
+  <Accordion title="Do you follow responsible disclosure practices?">
+    Yes. All of our work is conducted under a signed statement of work that defines the authorized scope of testing. We do not test systems outside of the agreed scope, and we do not exploit vulnerabilities beyond what is necessary to demonstrate the security impact and capture proof-of-concept evidence.
+
+    If during an engagement we discover evidence of a prior breach or active exploitation by a third party, we notify you immediately so you can initiate your incident response process. We are aligned with the Penetration Testing Execution Standard (PTES) and follow responsible disclosure principles in everything we do.
+  </Accordion>
+  <Accordion title="Will our systems be affected after testing?">
+    We do not leave persistent backdoors, rogue accounts, or any artifacts behind after testing concludes. As part of engagement closeout, we provide a cleanup confirmation documenting any test accounts created, files staged, or configurations modified during the assessment — along with the steps taken to remove or revert them.
+
+    If you want to verify our cleanup independently, we encourage it. Transparency about post-engagement system state is a standard part of our professional practice.
+  </Accordion>
+</AccordionGroup>
+
+## Still have questions?
+
+<CardGroup cols={2}>
+  <Card title="Request an assessment" icon="shield-check" href="/request-assessment">
+    Submit your inquiry and a consultant will follow up within one business day to discuss your environment and goals.
+  </Card>
+  <Card title="Read our case studies" icon="file-text" href="/resources/case-studies">
+    See real-world examples of how we have helped organizations in your industry identify and eliminate vulnerabilities.
+  </Card>
+</CardGroup>
